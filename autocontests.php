@@ -1,8 +1,8 @@
 <?php 
+
 require_once "conn.php";
 require_once "libs/phpQuery.php";
 require_once "autorize.php";
-//curl_setopt($ch, CURLOPT_COOKIE, "psession=924069258e907242ccd009c37cbcd132;max-age=604800;");
 function getLinksToLastThemes($url) {
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36');
@@ -19,16 +19,16 @@ function getLinksToLastThemes($url) {
 		}else{
 			$links = phpQuery::newDocument($resul);
 			$threads = $links->find('.title a');
-			foreach ($threads as $thread) {
-				$links = pq($thread);
-				$allThreads[] = $links->attr('href');
-			}
-			foreach ($allThreads as $link) {
-				$addLink = R::dispense('contests');
-				$addLink->link = $link;
-				R::store($addLink);
-			}
-			return autoContest();
+			// foreach ($threads as $thread) {
+			// 	$links = pq($thread);
+			// 	$allThreads[] = $links->attr('href');
+			// }
+			// foreach ($allThreads as $link) {
+			// 	$addLink = R::dispense('contests');
+			// 	$addLink->link = $link;
+			// 	R::store($addLink);
+			// }
+			// return autoContest();
 	}
 }
 getLinksToLastThemes('https://lolzteam.net/forums/contests/');
