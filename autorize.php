@@ -3,7 +3,7 @@ require_once "conn.php";
 //curl_setopt($cc, CURLOPT_COOKIE, "psession=924069258e907242ccd009c37cbcd132;max-age=604800;");
 function Auth() {
 	$cc = curl_init();
-	curl_setopt($cc, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36');
+	curl_setopt($cc, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chromfe/71.0.3578.98 Safari/537.36');
 	//curl_setopt($cc,CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($cc,CURLOPT_URL,'https://lolzteam.net/login/login');
 	curl_setopt($cc, CURLOPT_COOKIE, "G_ENABLED_IDPS=google; xf_id=;");
