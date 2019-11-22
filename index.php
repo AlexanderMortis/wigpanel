@@ -5,6 +5,6 @@
 	<title>Document</title>
 </head>
 <body>
-	Сам пошелdfdfdf
+	Переместился
 </body>
 </html>
