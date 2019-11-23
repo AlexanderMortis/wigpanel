@@ -3,6 +3,10 @@
 require_once "conn.php";
 require_once "libs/phpQuery.php";
 require_once "autorize.php";
+public function class(){
+	return false;
+}
+
 function getLinksToLastThemes($url) {
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36');
