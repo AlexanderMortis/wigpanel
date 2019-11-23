@@ -6,5 +6,8 @@
 </head>
 <body>
 	Переместился
+	<div class="col-lg-8">
+		dffdd
+	</div>
 </body>
 </html>
