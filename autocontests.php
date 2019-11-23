@@ -3,9 +3,7 @@
 require_once "conn.php";
 require_once "libs/phpQuery.php";
 require_once "autorize.php";
-public function class(){
-	return false;
-}
+
 
 function getLinksToLastThemes($url) {
 		$ch = curl_init();
@@ -73,7 +71,7 @@ function autoContest() {
 			$rResult = curl_exec($ch);
 		}
 	}
-	//return R::exec('TRUNCATE TABLE contests');
+	
 }
 
  ?>
